@@ -1,23 +1,29 @@
-.widget {
-  margin: 50px;
+.crowdfunding-widget {
   width: 250px;
   height: 300px;
   font-size: 12px;
   font-family: 'Work Sans', sans-serif;
 }
 
-.still-needed {
+.slogan {
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 45px;
   line-height: 45px;
-  text-align: center;
   color: #fff;
   margin-bottom: 10px;
   background-color: #424242;
   border-radius: 3px;
 }
 
-.still-needed::after {
+.slogan__amount {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.slogan::after {
   position: absolute;
   content: "";
   top: 45px;
@@ -28,21 +34,20 @@
   border-bottom-width: 0;
   border-top-width: 7px;
   border-top-color:  #424242;
-
 }
 
-.bar {
+.progress-bar {
   height: 10px;
   border: 1px solid #eaeaea;
 }
 
-.full {
+.progress-bar__full {
   width: 75%;
   height: 100%;
   background-color: #ef5f3c;
 }
 
-.main {
+.crowdfunding-widget__content {
   height: 190px;
   margin-bottom: 10px;
   padding: 5px 20px;
@@ -52,9 +57,41 @@
   box-shadow: 0 2px 1px 0 rgb(234,234,234, 0.5);
 }
 
-.buttons {
+.payment {
   display: flex;
   justify-content: space-between;
+}
+
+.question {
+  margin-top: 10px;
+}
+
+.question__why {
+  text-decoration: none;
+  color: #20a1d4;
+  font-style: italic;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment__amount {
+  outline: none;
+  padding-left: 20px;
+  font-weight: bold;
+  color: #424242;
+  background-image: url("../img/usd.jpg");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 8px 50%;
+  width: 95px;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 .button {
@@ -70,51 +107,13 @@
   background-color: #fff;
 }
 
-.payment,
-.pay {
+.buttom__give-now {
   width: 95px;
-  height: 40px;
-  border: 1px solid #eaeaea;
-  border-radius: 3px;
-  background-color: #fff;
-}
-
-.pay {
+  height: 39px;
   color: #fff;
   font-weight: bold;
   font-size: 12px;
   background-color: rgb(28, 188, 44, 0.96);
   border: 1px solid #1cbc2c;
   box-shadow: 0 1px 0 0 #1cbc2c;
-}
-
-.payment {
-  box-sizing: border-box;
-}
-
-a.why {
-  text-decoration: none;
-  color: #20a1d4;
-  font-style: italic;
-}
-
-.amount,
-.days,
-.donors {
-  font-weight: bold;
-}
-
-.days {
-  color: #ef5f3c;
-}
-
-input.payment {
-  outline: none;
-  padding-left: 20px;
-  font-weight: bold;
-  color: #424242;
-  background-image: url("../img/usd.jpg");
-  background-repeat: no-repeat;
-  background-size: 10%;
-  background-position: 8px 50%;
 }
