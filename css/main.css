@@ -33,7 +33,7 @@
   border: 5px solid transparent;
   border-bottom-width: 0;
   border-top-width: 7px;
-  border-top-color:  #424242;
+  border-top-color: #424242;
 }
 
 .progress-bar {
@@ -54,7 +54,7 @@
   color: #777;
   border: 1px solid #eaeaea;
   border-top: none;
-  box-shadow: 0 2px 1px 0 rgb(234,234,234, 0.5);
+  box-shadow: 0 2px 1px 0 rgb(234, 234, 234, 0.5);
 }
 
 .payment {
