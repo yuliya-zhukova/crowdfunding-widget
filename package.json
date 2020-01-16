@@ -1,0 +1,23 @@
+{
+  "name": "crowdfunding-widget",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch --output-style expanded css/main.scss css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuliya-zhukova/crowdfunding-widget.git"
+  },
+  "author": "Yuliya Zhukova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuliya-zhukova/crowdfunding-widget/issues"
+  },
+  "homepage": "https://github.com/yuliya-zhukova/crowdfunding-widget#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
