@@ -1,3 +1,11 @@
+$content_color: #777;
+$border-color: #eaeaea;
+$slogan_bg: #424242;
+$slogan-color: #fff;
+$progress-bar_full: #ef5f3c;
+$question-color: #20a1d4;
+$payment-button_bg: #1cbc2c;
+
 .crowdfunding-widget {
   width: 250px;
   height: 300px;
@@ -8,10 +16,10 @@
     height: 190px;
     margin-bottom: 10px;
     padding: 5px 20px;
-    color: #777;
-    border: 1px solid #eaeaea;
+    color: $content_color;
+    border: 1px solid $border-color;
     border-top: none;
-    box-shadow: 0 2px 1px 0 rgba(234, 234, 234, 0.5);
+    box-shadow: 0 1px 1px 0 $border-color;
   }
 }
 
@@ -22,9 +30,9 @@
   width: 100%;
   height: 45px;
   line-height: 45px;
-  color: #fff;
+  color: $slogan-color;
   margin-bottom: 10px;
-  background-color: #424242;
+  background-color: $slogan_bg;
   border-radius: 3px;
 
   &__amount {
@@ -42,18 +50,18 @@
     border: 5px solid transparent;
     border-bottom-width: 0;
     border-top-width: 7px;
-    border-top-color: #424242;
+    border-top-color: $slogan_bg;
   }
 }
 
 .progress-bar {
   height: 10px;
-  border: 1px solid #eaeaea;
+  border: 1px solid $border-color;
 
   &__full {
     width: 75%;
     height: 100%;
-    background-color: #ef5f3c;
+    background-color: $progress-bar_full;
   }
 }
 
@@ -65,16 +73,16 @@
     outline: none;
     padding-left: 20px;
     font-weight: bold;
-    color: #424242;
+    color: $slogan_bg;
     background-image: url("../img/usd.jpg");
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: 8px 50%;
     width: 95px;
     height: 40px;
-    border: 1px solid #eaeaea;
+    border: 1px solid $border-color;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: $slogan-color;
     box-sizing: border-box;
   }
 }
@@ -84,7 +92,7 @@
 
   &__why {
     text-decoration: none;
-    color: #20a1d4;
+    color: $question-color;
     font-style: italic;
   }
 }
@@ -101,19 +109,19 @@
   font-size: 11px;
   font-weight: bold;
   font-family: 'Work Sans', sans-serif;
-  border: 1px solid #eaeaea;
+  border: 1px solid $border-color;
   border-radius: 3px;
-  box-shadow: 0 1px 0 0 #eaeaea;
-  background-color: #fff;
+  box-shadow: 0 1px 0 0 $border-color;
+  background-color: $slogan-color;
 
   &__give-now {
     width: 95px;
-    height: 39px;
-    color: #fff;
+    height: 40px;
+    color: $slogan-color;
     font-weight: bold;
     font-size: 12px;
-    background-color: rgba(28, 188, 44, 0.96);
-    border: 1px solid #1cbc2c;
-    box-shadow: 0 1px 0 0 #1cbc2c;
+    background-color: $payment-button_bg;
+    border: none;
+    box-shadow: none;
   }
 }
