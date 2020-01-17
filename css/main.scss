@@ -2,7 +2,7 @@ $content_color: #777;
 $border-color: #eaeaea;
 $slogan_bg: #424242;
 $slogan-color: #fff;
-$progress-bar_full: #ef5f3c;
+$progress-bar-full: #ef5f3c;
 $question-color: #20a1d4;
 $payment-button_bg: #1cbc2c;
 
@@ -58,10 +58,10 @@ $payment-button_bg: #1cbc2c;
   height: 10px;
   border: 1px solid $border-color;
 
-  &__full {
+  &_full {
     width: 75%;
     height: 100%;
-    background-color: $progress-bar_full;
+    background-color: $progress-bar-full;
   }
 }
 
@@ -90,7 +90,7 @@ $payment-button_bg: #1cbc2c;
 .question {
   margin-top: 10px;
 
-  &__why {
+  &_why {
     text-decoration: none;
     color: $question-color;
     font-style: italic;
@@ -114,7 +114,7 @@ $payment-button_bg: #1cbc2c;
   box-shadow: 0 1px 0 0 $border-color;
   background-color: $slogan-color;
 
-  &__give-now {
+  &_give-now {
     width: 95px;
     height: 40px;
     color: $slogan-color;
